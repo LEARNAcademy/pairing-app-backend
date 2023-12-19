@@ -1,7 +1,8 @@
 # api/config/routes
 Rails.application.routes.draw do
   resources :pairs
-  resources :students
+  get '/cohorts/:id/students' => 'students#index'
+  resources :students, only: [:create, :update, :destroy] 
   resources :cohorts
   resources :activities
   get 'private/test'

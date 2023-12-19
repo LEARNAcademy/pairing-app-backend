@@ -39,7 +39,7 @@ cohorts = [
 ]
 
 cohorts.each do |cohort|
-  Cohort.create(cohort)
+  Cohort.create!(cohort)
   p "created: #{cohort}"
 end
 

@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
   def index
-    students = Student.all
+    cohort = Cohort.find(params[:id])
+    students = cohort.students.all
     render json: students
   end
 

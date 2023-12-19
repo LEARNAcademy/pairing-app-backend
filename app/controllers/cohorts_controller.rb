@@ -1,7 +1,12 @@
 class CohortsController < ApplicationController
   def index
     cohorts = Cohort.all
-    render json: cohorts
+    render json: cohorts.as_json(include: [:students])
+  end
+
+  def show
+    @cohort = Cohort.find(params[:id])
+    render json: @cohort
   end
 
   def create
