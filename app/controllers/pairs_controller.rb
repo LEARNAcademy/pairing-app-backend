@@ -31,6 +31,6 @@ class PairsController < ApplicationController
 
   private
   def pair_params
-    params.require(:pair).permit(:activity_id, :student_one_id, :student_two_id)
+    params.require(:pair).permit(:activity_id, :student_one_id, :student_two_id, :cohort_id)
   end
 end
