@@ -14,6 +14,8 @@ https://dbdiagram.io/d/63d7f38e296d97641d7d191e
 - `$ rails db:setup`
 - `$ bundle`
 
+** Please note: This is the backend repo of a decoupled full stack application. To experience the full application, you will also need the [pairing-app-frontend repo](https://github.com/LEARNAcademy/pairing-app-frontend)
+
 ## Initial Setup
 ```
 $ rails new apartment-app-backend -d postgresql -T
@@ -32,8 +34,6 @@ $ rails g devise:controllers users -c registrations sessions
 $ rails generate model create_jwt_denylist
 $ rails db:migrate
 ```
-
-** Please note: This is the backend repo of a decoupled full stack application. To experience the full application, you will also need the [pairing-app-frontend repo](https://github.com/LEARNAcademy/pairing-app-frontend)
 
 ### Resources
 ```
