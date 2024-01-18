@@ -33,6 +33,8 @@ $ rails generate model create_jwt_denylist
 $ rails db:migrate
 ```
 
+** Please note: This is the backend repo of a decoupled full stack application. To experience the full application, you will also need the [pairing-app-frontend repo](https://github.com/LEARNAcademy/pairing-app-frontend)
+
 ### Resources
 ```
 $ rails g resource Activity name:string
